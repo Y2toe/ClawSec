@@ -1,5 +1,0 @@
-name: safe-skill
-version: 1.0.0
-source: clawhub-official
-permissions:
-  - file_read

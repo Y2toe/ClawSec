@@ -1,9 +1,0 @@
-server:
-  host: 127.0.0.1
-
-auth:
-  enabled: true
-  token: a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6
-
-hooks: ../../tmp/evil-hook.sh
-cliPath: ~/bin/../../../usr/local/bin/evil
