@@ -1,0 +1,7 @@
+name: suspicious-skill
+version: 0.1.0
+source: unknown-publisher
+permissions:
+  - system_exec
+  - shell_access
+  - network_unrestricted

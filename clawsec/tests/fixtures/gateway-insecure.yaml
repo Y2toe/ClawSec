@@ -1,0 +1,5 @@
+websocket:
+  enabled: true
+  tls: false
+  ssl: false
+  port: 18790

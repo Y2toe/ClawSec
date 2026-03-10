@@ -1,0 +1,36 @@
+{
+  "_meta": {
+    "description": "Regex patterns for detecting suspicious code in skills",
+    "lastUpdated": "2026-03-10"
+  },
+  "execution": [
+    "child_process\\.exec(Sync)?\\s*\\(",
+    "child_process\\.spawn(Sync)?\\s*\\(",
+    "require\\s*\\(\\s*['\"]child_process['\"]\\s*\\)",
+    "process\\.binding\\s*\\(",
+    "eval\\s*\\(",
+    "Function\\s*\\(",
+    "new\\s+Function\\s*\\(",
+    "vm\\.runIn(New|This)Context\\s*\\("
+  ],
+  "networkAccess": [
+    "net\\.createServer\\s*\\(",
+    "dgram\\.createSocket\\s*\\(",
+    "http\\.request\\s*\\(",
+    "https\\.request\\s*\\(",
+    "fetch\\s*\\(",
+    "WebSocket\\s*\\(",
+    "\\.connect\\s*\\(\\s*\\d+"
+  ],
+  "dataExfiltration": [
+    "wallet|crypto[_\\-]?steal|keylog|backdoor|reverse[_\\-]?shell",
+    "fs\\.readFile(Sync)?\\s*\\(.*(\\.ssh|id_rsa|known_hosts|passwd|\\.env)",
+    "process\\.env\\b.*\\b(KEY|SECRET|TOKEN|PASS)"
+  ],
+  "obfuscation": [
+    "\\\\x[0-9a-fA-F]{2}(?:\\\\x[0-9a-fA-F]{2}){10,}",
+    "Buffer\\.from\\s*\\([^)]+,\\s*['\"]base64['\"]\\s*\\)\\.toString\\s*\\(",
+    "atob\\s*\\(",
+    "String\\.fromCharCode\\s*\\((?:\\s*\\d+\\s*,){5,}"
+  ]
+}

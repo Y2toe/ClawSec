@@ -1,0 +1,8 @@
+{
+  "_meta": {
+    "description": "SHA-256 hashes of known malicious skill files",
+    "lastUpdated": "2026-03-10",
+    "format": "Array of hex-encoded SHA-256 hashes"
+  },
+  "hashes": []
+}
