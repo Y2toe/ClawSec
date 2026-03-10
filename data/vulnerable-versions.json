@@ -1,0 +1,34 @@
+{
+  "_meta": {
+    "description": "Known vulnerable OpenClaw versions and associated CVEs",
+    "lastUpdated": "2026-03-10",
+    "minimumSafeVersion": "2026.2.25"
+  },
+  "versions": {
+    "2026.1.0": [
+      { "cve": "CVE-2026-25253", "cvss": 8.8, "description": "RCE via WebSocket auth token theft" },
+      { "cve": "CVE-2026-24763", "cvss": 8.1, "description": "Command injection in agent pipeline" }
+    ],
+    "2026.1.1": [
+      { "cve": "CVE-2026-25253", "cvss": 8.8, "description": "RCE via WebSocket auth token theft" },
+      { "cve": "CVE-2026-24763", "cvss": 8.1, "description": "Command injection in agent pipeline" }
+    ],
+    "2026.1.2": [
+      { "cve": "CVE-2026-25157", "cvss": 7.5, "description": "cliPath injection - sandbox bypass" },
+      { "cve": "CVE-2026-25593", "cvss": 7.5, "description": "cliPath injection variant" }
+    ],
+    "2026.1.3": [
+      { "cve": "CVE-2026-25157", "cvss": 7.5, "description": "cliPath injection - sandbox bypass" },
+      { "cve": "CVE-2026-28456", "cvss": 7.8, "description": "Unsafe hook loading - arbitrary code execution" }
+    ],
+    "2026.2.0": [
+      { "cve": "CVE-2026-28456", "cvss": 7.8, "description": "Unsafe hook loading - arbitrary code execution" }
+    ],
+    "2026.2.10": [
+      { "cve": "CVE-2026-28456", "cvss": 7.8, "description": "Unsafe hook loading - arbitrary code execution" }
+    ],
+    "2026.2.20": [
+      { "cve": "CVE-2026-28456", "cvss": 7.8, "description": "Unsafe hook loading - arbitrary code execution" }
+    ]
+  }
+}
